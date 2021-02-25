@@ -1,0 +1,19 @@
+<IfModule mod_rewrite.c>
+Options -MultiViews
+RewriteEngine on
+
+# For the primary categories:
+RewriteRule ^shop/(store)/?$ shop.php
+
+
+# For specific products:
+RewriteRule ^browse/(Star-Wars|Marvel|Uncategorized)/([0-9]+)/?$ browse.php?category=$1&id=$2
+
+
+
+
+# For HTTPS pages:
+RewriteCond %{HTTPS} off
+RewriteRule ^(checkout\.php|billing\.php|final\.php|admin/(.*))$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+</IfModule>
