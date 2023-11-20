@@ -22,9 +22,9 @@ mysqli_set_charset($dbc, 'utf8');
 // Omit the closing PHP tag to avoid 'headers already sent' errors!
 
 
-/*if(mysqli_connect_error()){
+if(mysqli_connect_error()){
     echo 'Database connection errors: '. mysqli_connect_error();
     die();
 }
-*/
+
 ?>
