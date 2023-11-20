@@ -1,7 +1,7 @@
 <?php
 //echo BOX_BEGIN;
 //echo '<h2>Welcome to <div class="mainlogo">PopLocker!</div></h2>
-echo '<br><img src="/githubPop/html/images/bannerwelcome.png" alt="Welcome to poplocker" class="rounded img-fluid">
+echo '<br><img src="/poplocker/html/images/bannerwelcome.png" alt="Welcome to poplocker" class="rounded img-fluid">
 <br>
 <br>
 <p class="text-center">Home to all of your Funko Pop Figure wants and needs! Check out our store catalog with over 30 collectibles! Come shop till you Pop! </p>
@@ -29,11 +29,11 @@ if (mysqli_num_rows($r) > 0) {
 				<div class="card-header">
 					<span>' . $row['title'] . '</span>				  
 				</div>	
-			<img class="card-img-top" src="/githubPop/html/images/' . $row['image'] . '" alt="Card image cap">
+			<img class="card-img-top" src="/poplocker/html/images/' . $row['image'] . '" alt="Card image cap">
 				<div class="card-body">
 					<p class="card-text"><span>' . get_price($row['price']) . '</span></p>
 					<p class="card-text"><span>'. $row['description'] .'</span></p>
-					<a href="/githubPop/html/cart.php?id=' .$row['id']. '&action=add"  class="btn btn-primary">add to cart</a>
+					<a href="/poplocker/html/cart.php?id=' .$row['id']. '&action=add"  class="btn btn-primary">add to cart</a>
 				</div></div>
 			</div>';
 }

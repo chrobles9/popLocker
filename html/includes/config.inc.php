@@ -12,8 +12,8 @@ DEFINE('CONTACT_EMAIL', 'chrobles@my.waketech.edu');
 //define ('BASE_URL', '/chrobles/WEB260/ex2/html/');
 //define ('MYSQL', BASE_URI . './mysql.inc.php');
 
-define ('BASE_URI', 'C:/xampp/htdocs/githubPop/'); 
-define ('BASE_URL', 'http://localhost/githubPop/html/');
+define ('BASE_URI', 'C:/xampp/htdocs/poplocker/'); 
+define ('BASE_URL', 'http://localhost/poplocker/html/');
 define ('MYSQL', BASE_URI . 'mysql.inc.php');
 
 // Function for handling errors.
