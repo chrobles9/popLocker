@@ -1,4 +1,4 @@
 <?php
-require ('./includes/config.inc.php');
+require ('../config.inc.php');
 echo MYSQL;
 ?>
