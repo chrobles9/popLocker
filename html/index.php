@@ -1,6 +1,6 @@
 <?php
 // Require the configuration before any PHP code:
-  require('./includes/config.inc.php');
+  require('../config.inc.php');
 
   include('./includes/product_functions.inc.php');
 

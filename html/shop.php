@@ -3,7 +3,7 @@
 // TODO: ERROR - Site menu stays collasped in smaller viewports 
 
 // Require the configuration before any PHP code:
-require('./includes/config.inc.php');
+require('../config.inc.php');
 
 // Include the header file:
 include('./includes/header.html');
