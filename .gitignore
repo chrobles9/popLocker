@@ -1,4 +1,4 @@
 
 # ignore ALL files in ANY directory named config.inc.php and mysql.inc.php
 mysql.inc.php
-config.inc.php
+/githupPop/config.inc.php
