@@ -11,7 +11,7 @@ while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC)) {
 	if (!$header) {
 
 		echo '<h2>' . $catid . ' Products</h2>';
-echo '<br><img src="/poplocker/html/images/poplockerlogo.png" alt="poplocker logo" class="rounded img-fluid">
+echo '<br><img src="/githubPop/html/images/poplockerlogo.png" alt="poplocker logo" class="rounded img-fluid">
 <br><br>';
 		echo '<p><br clear="all" /></p>';
 		echo '<div class="row">';
@@ -26,13 +26,13 @@ echo '<br><img src="/poplocker/html/images/poplockerlogo.png" alt="poplocker log
 				<div class="card-header">
 					<span>' . $row['title'] . '</span>				  
 				</div>	
-			<img class="card-img-top" src="/poplocker/html/images/' . $row['image'] . '" alt="Card image cap">
+			<img class="card-img-top" src="/githubPop/html/images/' . $row['image'] . '" alt="Card image cap">
 				<div class="card-body">
 					<p class="card-text"><span>' . get_price($row['price']) . '</span></p>
 					<p class="card-text"><span>'. $row['description'] .'</span></p>
 
 
-					<a href="/poplocker/html/cart.php?id=' .$row['id']. '&action=add"  class="btn btn-primary">add to cart</a>
+					<a href="/githubPop/html/cart.php?id=' .$row['id']. '&action=add"  class="btn btn-primary">add to cart</a>
 				</div></div>
 			</div>';
 } // End of WHILE loop.

@@ -1,6 +1,6 @@
 <?php
 // Require the configuration before any PHP code:
-  require('../config.inc.php');
+  require('../access/config.inc.php');
 
 
 // Include the header file:

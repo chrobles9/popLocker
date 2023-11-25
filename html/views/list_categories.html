@@ -6,7 +6,7 @@ echo '<ul class="items-list">';
       echo '<dl class="special fright">
          <h2>Items By Category</h2>
          <br>
-         <img src="/poplocker/html/images/poplockerlogo.png" alt="poplocker logo" class="rounded img-fluid">
+         <img src="/githubPop/html/images/poplockerlogo.png" alt="poplocker logo" class="rounded img-fluid">
 <br><br>
          <div class="row">';
    
@@ -15,10 +15,10 @@ echo '<ul class="items-list">';
 while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC)) { // Fetch each item.
    echo '<div class="col-sm d-flex">
    <div class="card card-body flex-fill" style="width: 18rem;">
-   <img class="card-img-top" src="/poplocker/html/images/categories/' . $row['image'] . '" alt="' . $row['category'] . '">
+   <img class="card-img-top" src="/githubPop/html/images/categories/' . $row['image'] . '" alt="' . $row['category'] . '">
       <div class="card-body">
          <p class="card-text"><span>' . $row['category'] . '</span></p>
-         <a href="/poplocker/html/browse/' . $row['category'] . '/' . $row['id'] . '" class="btn btn-primary">View All ' . $row['category'] . ' Products</a>
+         <a href="/githubPop/html/browse/' . $row['category'] . '/' . $row['id'] . '" class="btn btn-primary">View All ' . $row['category'] . ' Products</a>
       </div></div>
    </div>';
 }
