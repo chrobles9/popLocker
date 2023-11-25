@@ -3,7 +3,7 @@
 // TODO: Add continue shopping button to allow user to return to shop page 
 
 // Require the configuration before any PHP code:
-require('./includes/config.inc.php');
+require('../config.inc.php');
 
 //uid is short for unique user id
 // Check for, or create, a user session:

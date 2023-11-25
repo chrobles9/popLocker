@@ -1,6 +1,6 @@
 <?php
 // Require the configuration before any PHP code:
-require('./includes/config.inc.php');
+require('../config.inc.php');
 
 // Validate the required values:
  $category  = false;
