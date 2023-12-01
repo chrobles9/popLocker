@@ -24,19 +24,43 @@ if (mysqli_num_rows($r) > 0) {
    while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC)) {
   
 
-		echo '<div class="col-sm d-flex">
-			<div class="card card-body flex-fill" style="width: 18rem;">
+		echo '
+		
+		<!-- TODO: correct home page card layout  -->
+		
+		<!-- <div class="col-md d-flex">
+			<div class="card card-body flex-fill text-bg-secondary" style="width: 18rem;">
 				<div class="card-header">
-					<span>' . $row['title'] . '</span>				  
-				</div>	
-			<img class="card-img-top" src="/poplocker/html/images/' . $row['image'] . '" alt="Card image cap">
+					<span>' . $row['title'] . '</span>
+				</div>
+				<img class="card-img-top" src="/poplocker/html/images/' . $row['image'] . '" alt="Card image cap">
 				<div class="card-body">
 					<p class="card-text"><span>' . get_price($row['price']) . '</span></p>
 					<p class="card-text"><span>'. $row['description'] .'</span></p>
-					<a href="/poplocker/html/cart.php?id=' .$row['id']. '&action=add"  class="btn btn-primary">add to cart</a>
-				</div></div>
-			</div>';
-}
+					<a href="/poplocker/html/cart.php?id=' .$row['id']. '&action=add" class="btn btn-primary">add to cart</a>
+				</div>
+			</div>
+		</div> -->
+		<!-- <div class="col-md d-flex"> -->
+		<div class="col-md card-group">
+			<div class="card" style="width: 18rem">
+				<div class="card-body text-bg-secondary" >
+					<div class="card-title">
+						<span>' . $row['title'] . '</span>
+					</div>
+					<img class="card-img-top" src="/poplocker/html/images/' . $row['image'] . '" alt="Card image cap">
+					<div class="card-body">
+						<p class="card-text"><span>' . get_price($row['price']) . '</span></p>
+						<p class="card-text"><span>'. $row['description'] .'</span></p>
+						<a href="/poplocker/html/cart.php?id=' .$row['id']. '&action=add" class="btn btn-primary">add to cart</a>
+					</div>
+				</div>
+			</div>
+		
+		
+		</div>
+		';
+		}
 	
 	echo '</div>
 			</dl>';

@@ -14,7 +14,7 @@ echo '<ul class="items-list">';
        //Bootstrap Cards for products
 while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC)) { // Fetch each item.
    echo '<div class="col-sm d-flex">
-   <div class="card card-body flex-fill" style="width: 18rem;">
+   <div class="card card-body flex-fill text-bg-secondary" style="width: 18rem;">
    <img class="card-img-top" src="/poplocker/html/images/categories/' . $row['image'] . '" alt="' . $row['category'] . '">
       <div class="card-body">
          <p class="card-text"><span>' . $row['category'] . '</span></p>
