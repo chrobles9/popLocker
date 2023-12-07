@@ -1,9 +1,11 @@
-<?php session_start(); ?><!DOCTYPE html>
-   <html lang="en" data-bs-theme="dark">
-   <head>
-       <!--<title>PopLocker | Shop Till You Pop!</title>--> 
-       <title>
-     <?php // Use a default page title if one wasn't provided...
+<?php session_start(); ?>
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+  <!--<title>PopLocker | Shop Till You Pop!</title>-->
+  <title>
+    <?php // Use a default page title if one wasn't provided...
            if (isset($page_title)) { 
                echo $page_title; 
            } else { 
@@ -12,20 +14,24 @@
 
 
      ?>
-    </title>
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/poplocker/html/css/main.css" />
-    
-    <link rel="stylesheet" href='/poplocker/html/css/bootstrap.min.css' />
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scaleable=no">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-   </head>
-   <body>
-   
-   <!--Responsive Navigation bar with PopLocker brand-->
-   <header>
+  </title>
+
+  <!-- TODO: ADD bootstrap cdn and remove local files for smaller size -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/poplocker/html/css/main.css" />
+
+  <link rel="stylesheet" href='/poplocker/html/css/bootstrap.min.css' />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scaleable=no">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <!--Responsive Navigation bar with PopLocker brand-->
+  <header>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-md bg-body-tertiary">
 
@@ -43,6 +49,8 @@
           aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+
+        <!-- TODO: Right align mobile navigation menu items  -->
 
         <!-- Navigation items -->
         <div class="collapse navbar-collapse" id="navbarTogglerMobile">
@@ -65,8 +73,8 @@
       </div>
     </nav>
   </header>
-   
-      <!-- content -->
-      <div id="content">
-         <div class="container">
-            <div class="inside">
+
+  <!-- content -->
+  <div id="content">
+    <div class="container">
+      <div class="inside">
