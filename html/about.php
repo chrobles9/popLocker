@@ -4,9 +4,11 @@
 
 
 
-  
+
+  // page title
+$page_title = 'PopLocker | About Us';
+
 // Include the header file:
-$page_title = 'PopLocker | Shop Till You Pop!';
 include('./includes/header.html');
 
 

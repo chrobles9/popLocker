@@ -17,8 +17,9 @@ if (isset($_COOKIE['SESSION']) && (strlen($_COOKIE['SESSION']) === 32)) {
 // Send the cookie:
 setcookie('SESSION', $uid, time()+(60*60*24*30));
 
+// page title
+$page_title = 'PopLocker | Your Shopping Cart';
 // Include the header file:
-$page_title = 'PopLocker - Your Shopping Cart';
 include('./includes/header.html');
 
 // Require the database connection:

@@ -4,8 +4,10 @@
 
   include('./includes/product_functions.inc.php');
 
+// page title
+$page_title = 'PopLocker | Home';
+
 // Include the header file:
-$page_title = 'PopLocker | Shop Till You Pop!';
 include('./includes/header.html');
 
 
