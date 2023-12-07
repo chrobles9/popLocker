@@ -25,43 +25,46 @@
    <body>
    
    <!--Responsive Navigation bar with PopLocker brand-->
-<!-- TODO: Add header element  -->
-  <nav class="navbar navbar-expand-md text-bg-secondary" id="navbar">
-    <div class="container-fluid">
+   <header>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md bg-body-tertiary">
 
-      <!-- Navigation Logo -->
-      <a class="navbar-brand" href="/poplocker/html/index.php">
-        <h1 class="mainLogo">PopLocker</h1>
-        <h2>Shop till you Pop!</h2>
-      </a>
+      <!-- Navigation container  -->
+      <div class="container">
 
-      <!-- Mobile dropdown button -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <!-- Navigation Logo -->
+        <a class="navbar-brand" href="/poplocker/html/index.php">
+          <h1 class="mainLogo">PopLocker</h1>
+          <span class="navbar-text">Shop till you Pop!</span>
+        </a>
 
-    <div class="collapse navbar-collapse " id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="/poplocker/html/index.php">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/poplocker/html/about.php">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/poplocker/html/shop/store/">Store</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/poplocker/html/cart.php">Cart</a>
-        </li>
-      </ul>
-    </div>
+        <!-- Navigation toggler button for mobile menu -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerMobile"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-  </div>
-    
-    
-  </nav>
+        <!-- Navigation items -->
+        <div class="collapse navbar-collapse" id="navbarTogglerMobile">
+          <ul class="navbar-nav w-100 justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/poplocker/html/index.php">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/poplocker/html/about.php">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/poplocker/html/shop/store/">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/poplocker/html/cart.php">Cart</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+  </header>
    
       <!-- content -->
       <div id="content">
