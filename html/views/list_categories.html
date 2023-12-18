@@ -4,23 +4,34 @@ echo '<ul class="items-list">';
 
 	
       echo '<dl class="special fright">
-         <h2>Items By Category</h2>
-         <br>
-         <img src="/poplocker/html/images/poplockerlogo.png" alt="poplocker logo" class="rounded img-fluid">
-<br><br>
-         <div class="row">';
+         <h2 class="text-center my-5">Items By Category</h2>
+
+         <div class="row row-cols-1 row-cols-lg-3 g-4">';
    
        //Fetch each item:
        //Bootstrap Cards for products
 while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC)) { // Fetch each item.
-   echo '<div class="col-sm d-flex">
-   <div class="card card-body flex-fill text-bg-secondary" style="width: 18rem;">
-   <img class="card-img-top" src="/poplocker/html/images/categories/' . $row['image'] . '" alt="' . $row['category'] . '">
-      <div class="card-body">
-         <p class="card-text"><span>' . $row['category'] . '</span></p>
-         <a href="/poplocker/html/browse/' . $row['category'] . '/' . $row['id'] . '" class="btn btn-primary">View All ' . $row['category'] . ' Products</a>
-      </div></div>
-   </div>';
+   echo '
+   <div class="col">
+      <div class="card h-100 text-bg-secondary">
+         <div class="card-body">
+            <img class="card-img-top" src="/poplocker/html/images/categories/' . $row['image'] . '"
+               alt="' . $row['category'] . '">
+            <p class="card-text"><span>' . $row['category'] . '</span></p>
+         </div>
+   
+         <div class="card-footer">
+   
+            <a href="/poplocker/html/browse/' . $row['category'] . '/' . $row['id'] . '" class="btn btn-primary">View All '
+               .
+               $row['category'] . ' Products</a>
+   
+         </div>
+      </div>
+   </div>
+
+
+   ';
 }
 
       echo '</div></dl>';

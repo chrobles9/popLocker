@@ -1,6 +1,5 @@
 <?php
 
-// TODO: ERROR - Site menu stays collasped in smaller viewports 
 
 // Require the configuration before any PHP code:
 require('../access/config.inc.php');

@@ -1,17 +1,23 @@
 <?php
 //echo BOX_BEGIN;
 
-//echo '<h2>Welcome to <div class="mainlogo">PopLocker!</div></h2>
+echo '
+<div class="container my-5">
 
-echo '<br><img src="/poplocker/html/images/bannerwelcome.png" alt="Welcome to poplocker" class="rounded img-fluid">
-<br>
-<br>
+
+<h2 class="text-center">Home</h2>
 
 <!-- Description under banner -->
 <p class="text-center">Home to all of your Funko Pop Figure wants and needs! Check out our store catalog with over 30 collectibles! Come shop till you Pop! </p>
 </div>';
 
-echo '<div class="wrapper">';
+echo '
+ <!-- featured items -->
+<div class="container">
+<h3>
+	Featured Items:
+</h3>
+';
 
 // Check for sales!
 
@@ -20,53 +26,35 @@ echo '<div class="wrapper">';
 if (mysqli_num_rows($r) > 0) {
 	
 	echo '
-	<dl class="special fright">
-		<dt>Featured Items</dt>
-		<div class="row">';
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+';
+
 
 	 //Fetch each item:
    while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC)) {
   
 
 		echo '
-		
-		<!-- TODO: correct home page card layout  -->
-		<!-- TODO: center align cards, adjust card gap,  -->
-		<!-- <div class="col-md d-flex">
-			<div class="card card-body flex-fill text-bg-secondary" style="width: 18rem;">
-				<div class="card-header">
-					<span>' . $row['title'] . '</span>
-				</div>
-				<img class="card-img-top" src="/poplocker/html/images/' . $row['image'] . '" alt="Card image cap">
-				<div class="card-body">
-					<p class="card-text"><span>' . get_price($row['price']) . '</span></p>
-					<p class="card-text"><span>'. $row['description'] .'</span></p>
-					<a href="/poplocker/html/cart.php?id=' .$row['id']. '&action=add" class="btn btn-primary">add to cart</a>
-				</div>
-			</div>
-		</div> -->
-		<!-- <div class="col-md d-flex"> -->
-		<div class="col-md card-group">
-			<div class="card" style="width: 18rem">
-				<div class="card-body text-bg-secondary" >
-					<div class="card-title">
-						<span>' . $row['title'] . '</span>
-					</div>
-					<img class="card-img-top" src="/poplocker/html/images/' . $row['image'] . '" alt="Card image cap">
+			<div class="col">
+				<div class="card h-100 text-bg-secondary">
 					<div class="card-body">
+						<h5 class="card-title">
+							<span>' . $row['title'] . '</span>
+						</h5>
+						<img class="card-img-top" src="/poplocker/html/images/' . $row['image'] . '" alt="Image of ' . $row['title'] . '">
 						<p class="card-text"><span>' . get_price($row['price']) . '</span></p>
 						<p class="card-text"><span>'. $row['description'] .'</span></p>
+					</div>
+					<div class="card-footer text-end">
 						<a href="/poplocker/html/cart.php?id=' .$row['id']. '&action=add" class="btn btn-primary">add to cart</a>
 					</div>
 				</div>
 			</div>
-		
-		
-		</div>
-		';
+			';
 		}
-	
-	echo '</div>
-			</dl>';
+		
+		echo '
+	</div>
+		</div>';
 } // End of mysqli_num_rows() IF.
-

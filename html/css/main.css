@@ -22,4 +22,7 @@ table{
     text-decoration: underline;
     text-underline-offset: 0.5rem;
 }
+.card-img-top {
+    margin: 0 auto;
+}
 
